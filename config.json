@@ -1,0 +1,41 @@
+{
+    "model" : {
+        "min_input_size":       288,
+        "max_input_size":       448,
+        "anchors":              [25,33, 52,94, 56,71, 67,83, 68,98, 73,65, 81,96, 116,134, 147,182],
+        "labels":               ["Shorts", "Dress", "Coat", "Suit", "Skirt", "Jacket", "Jeans", "Swimwear"]
+    },
+
+    "train": {
+        "train_image_folder":   "OIDv4_ToolKit/OID/Dataset/train/Shorts_Dress_Coat_Suit_Skirt_Jacket_Jeans_Swimwear/",
+        
+        "train_annot_folder":   "OIDv4_ToolKit/OID/Dataset/train/Shorts_Dress_Coat_Suit_Skirt_Jacket_Jeans_Swimwear/annot/",
+        "cache_name":           "train_cache_8.pkl",
+
+        "train_times":          3,
+        "batch_size":           8,
+        "learning_rate":        1e-4,
+        "nb_epochs":            100,
+        "warmup_epochs":        3,
+        "ignore_thresh":        0.5,
+        "gpus":                 "0",
+
+        "grid_scales":          [1,1,1],
+        "obj_scale":            5,
+        "noobj_scale":          1,
+        "xywh_scale":           1,
+        "class_scale":          1,
+
+        "tensorboard_dir":      "logs2",
+        "saved_weights_name":   "8class_clothes_v2.h5",
+        "debug":                true
+    },
+
+    "valid": {
+        "valid_image_folder":   "OIDv4_ToolKit/OID/Dataset/validation/Shorts_Dress_Coat_Suit_Skirt_Jacket_Jeans_Swimwear/",
+        "valid_annot_folder":   "OIDv4_ToolKit/OID/Dataset/validation/Shorts_Dress_Coat_Suit_Skirt_Jacket_Jeans_Swimwear/annot/",
+        "cache_name":           "val_cache.pkl",
+
+        "valid_times":          1
+    }
+}
