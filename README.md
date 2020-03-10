@@ -1,7 +1,6 @@
 # ClothesDetection with YOLO3 (Detection, Training, and Web deploy)
 
-Inline-style: 
-![example Image 1](https://github.com/maximenkooo/ClothesDetection/tree/master/output/Kingsman.png)
+![Example image](./output/Kingsman.png)
 
 ### Installing
 To install the dependencies, run
