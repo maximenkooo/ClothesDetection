@@ -1,7 +1,7 @@
 # ClothesDetection with YOLO3 (Detection, Training, and Web deploy)
 
 Inline-style: 
-![alt text](https://github.com/maximenkooo/ClothesDetection/tree/master/output/Gentlemen.png)
+![example Image 1](https://github.com/maximenkooo/ClothesDetection/tree/master/output/Kingsman.png)
 
 ### Installing
 To install the dependencies, run
@@ -16,9 +16,11 @@ Download the dataset from
 ```git clone https://github.com/EscVM/OIDv4_ToolKit```
 
 2. Install the required packages
+
 ```cd OIDv4_ToolKit && pip3 install -r requirements.txt```
 
 3. Use the ToolKit to download images for Object Detection
+
 ```! cd OIDv4_ToolKit &&  python3 main.py downloader --classes Shorts Dress Coat Suit Skirt Jacket Jeans Swimwear --type_csv train --multiclasses 1 --limit 600```
 
 ```! cd OIDv4_ToolKit &&  python3 main.py downloader --classes Shorts Dress Coat Suit Skirt Jacket Jeans Swimwear --type_csv validation --multiclasses 1 --limit 300```
