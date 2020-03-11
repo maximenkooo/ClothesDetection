@@ -38,13 +38,14 @@ Download the dataset from
 ```python train.py -c config.json```
 
 ### Perform detection using trained weights on image, set of images, video, or webcam
-1. Start the web app
-
-```python3 web_app.py```
-
-or if you want use it only local
+1. It carries out detection on the image and write the image with detected bounding boxes to the output folder.
 
 ```python predict.py -c config.json -i /path/to/image/or/video```
+
+2. or Start the web app
+```python3 web_app.py```
+
+![WEb App](./temp/screenshot_web_app.png)
 
 ### References
 https://github.com/experiencor/keras-yolo3 - YOLOv3 model training.
